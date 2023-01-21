@@ -359,8 +359,11 @@
     </footer>
     
     <script type="text/javascript">
-      $(".iphone-img").hover(function() {
-        $(this).fadeToggle();});
+      $(".iphone-img").click(function() {
+        $(this).animate({
+          width: "100px",
+          height: "100px"});
+      });
     </script>
   </body>
 </html>
