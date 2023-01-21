@@ -362,7 +362,7 @@
       let data = prompt("Enter data: ");
       $.ajax(data)
         .done(function(data) {
-        $("#add-p").append(data)
+        $("#add-p").append(data)})
           .fail(function() {
           alert("Could not load data")});
     </script>
