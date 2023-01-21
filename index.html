@@ -19,8 +19,6 @@
         },
       };
     </script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -351,7 +349,7 @@
       </div>
     </div>
     
-    <p id="add-p"></p>
+    
     
     <!-- footer Section -->
     <footer>
@@ -359,14 +357,5 @@
         <p class="py-6">Copyright &copy; 2022, All Rights Reserved</p>
       </div>
     </footer>
-    
-    <script type="text/javascript">
-      let data = prompt("Enter data: ");
-      $.ajax("https://krutika-waghmare.github.io/Demo_Gamma0/",{data: data})
-        .done(function(data) {
-        $("#add-p").html(data)})
-          .fail(function() {
-          alert("Could not load data")});
-    </script>
   </body>
 </html>
