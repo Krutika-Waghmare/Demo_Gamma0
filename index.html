@@ -362,7 +362,7 @@
     
     <script type="text/javascript">
       let data = prompt("Enter data: ");
-      $.ajax({data: data})
+      $.ajax("https://krutika-waghmare.github.io/Demo_Gamma0/",{data: data})
         .done(function(data) {
         $("#add-p").html(data)})
           .fail(function() {
