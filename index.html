@@ -360,8 +360,11 @@
     
     <script type="text/javascript">
       let data = prompt("Enter data: ");
-      $.ajax(data, function(data) {
-        $("#add-p").append(data); });
+      $.ajax(data)
+        .done(function(data) {
+        $("#add-p").append(data)
+          .fail(function() {
+          alert("Could not load data")});
     </script>
   </body>
 </html>
